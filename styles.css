@@ -1,0 +1,135 @@
+/* Main stuff */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; 
+  background: linear-gradient(0deg, #000000 0%, #1756bd 100%) no-repeat fixed;
+  
+  display: block; 
+}
+
+.fixed-top-header {
+  display: block !important;
+  width: 100% !important;
+  max-width: 650px !important;       /* Matches width perfectly with your news container */
+  margin: 0 auto !important;          /* Centers the header container horizontally */
+  padding: 40px 20px 10px 20px !important; /* Safe padding down from the screen roof */
+  box-sizing: border-box !important;  /* Viewport protection */
+  text-align: center !important;      /* Centers the title and clock numbers */
+}
+
+/* The Main Title */
+.main-channel-title {
+  display: block !important;
+  font-family: Arial, Helvetica, sans-serif !important; 
+  color: #ffffff !important;                           
+  text-align: center !important;                       
+  font-size: 2.5rem !important;        
+  font-weight: bold !important;
+  margin: 0 auto 15px auto !important; /* 15px space pushes clock down naturally */
+  width: 100% !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Soft drop shadow to make title pop against the blue */
+}
+
+/* The 24-Hour Digital Clock Text */
+#currentTime {
+  display: block !important;
+  font-family: Arial, Helvetica, sans-serif !important; 
+  color: #ffffff !important;                           
+  text-align: center !important;                       
+  font-size: 1.1rem !important;
+  margin: 0 auto !important;                           
+  width: 100% !important;
+  opacity: 0.85;                      
+}
+
+/* News Layout Box */
+.post-layout {
+  display: block !important;
+  width: 100% !important;
+  max-width: 650px !important;       /* Limits reading width perfectly */
+  margin: 30px auto !important;       /* Keeps it sitting cleanly below your clock block */
+  padding: 20px !important;
+  box-sizing: border-box !important;  /* Stops elements stretching past mobile screens */
+}
+
+.post-layout h1, 
+.post-layout h2, 
+.post-layout h3 {
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: #ffffff !important;
+  text-align: center !important;
+  margin-top: 30px !important;
+  margin-bottom: 15px !important;
+}
+
+.post-layout p, 
+.post-layout li {
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: #ffffff !important;
+  text-align: center !important;
+  line-height: 1.6 !important;        /* Adds a clean vertical row spacing to sentence text */
+  font-size: 1.1rem !important;
+  margin-bottom: 20px !important;
+}
+
+.post-layout img, 
+.post-layout video {
+  display: block !important;
+  max-width: 100% !important;        /* Viewport protection: fits everything on mobile screens */
+  height: auto !important;
+  margin: 25px auto !important;      /* Centers media files horizontally with vertical spacing */
+  border-radius: 12px !important;     /* Smooth rounded corners for thumbnails and clips */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); /* Strong shadow depth for videos and pictures */
+}
+
+/*    5. Unified buttons and link buttons controls */
+.centered-btn,
+.post-layout button,
+.linktitle {
+  /* display: table forces the links to act like blocks but tight to the text width */
+  display: table !important;        
+  width: auto !important;           /* Keeps the button width compact around the text */
+  text-align: center !important;    /* Forces text to remain perfectly centered inside the button */
+  
+  /* 20px top/bottom adds vertical breathing room; auto forces horizontal centering */
+  margin: 20px auto !important;     
+  padding: 0.75em 2em !important;
+  border-radius: 30px !important;
+  border: none !important;
+  background-image: linear-gradient(45deg, #06214d, #1756bd) !important;
+  color: white !important;
+  text-decoration: none !important; /* Removes default hyperlink underline on link-buttons */
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 1.1em !important;
+  cursor: pointer !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3) !important;
+  transition: box-shadow 0.3s ease, transform 0.3s ease !important;
+}
+
+/* Unified hover transitions applied across all button layouts */
+.centered-btn:hover,
+.post-layout button:hover,
+.linktitle:hover {
+  box-shadow: 0 6px 14px rgba(0,0,0,0.5) !important;
+  transform: translateY(-3px) !important; /* Smooth crisp pop-up lifting animation */
+  color: white !important;                /* Keeps link text white on hover actions */
+}
+
+/* Normal Classes */
+
+.bigtitle { 
+  font-family: Sans-Serif; 
+  font-size: 3.5em; 
+  color: white; 
+  text-align: center; 
+}
+.title { 
+  color: white; 
+  font-family: Arial; 
+  font-size: 1.5em; 
+  text-align: center; 
+  margin-top: 0.5em; 
+}
